@@ -1,16 +1,21 @@
 package models
 
+type EmptyVersion struct {
+}
+
 type TimestampVersion struct {
 	Version string `json:"version"`
 }
 
+type Version map[string]string
+
 type InRequest struct {
 	Source  Source  `json:"source"`
-	Version TimestampVersion `json:"version"`
+	Version Version `json:"version"`
 }
 
 type InResponse struct {
-	Version  TimestampVersion  `json:"version"`
+	Version  Version  `json:"version"`
 }
 
 type OutParams struct {
@@ -23,15 +28,14 @@ type OutRequest struct {
 }
 
 type OutResponse struct {
-	Version  TimestampVersion  `json:"version"`
+	Version  Version  `json:"version"`
 }
 
 type CheckRequest struct {
 	Source  Source  `json:"source"`
-	Version  TimestampVersion  `json:"version"`
+	Version  EmptyVersion  `json:"version"`
 }
 
 type CheckResponse []TimestampVersion
 
 type Source struct {}
-
