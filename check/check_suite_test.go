@@ -1,7 +1,6 @@
 package main_test
 
 import (
-	"os"
 	"testing"
 
 	. "github.com/onsi/ginkgo"
