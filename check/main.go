@@ -4,8 +4,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"os"
-	"strconv"
-	"time"
 
 	"github.com/SWCE/keyval-resource/models"
 )
@@ -17,11 +15,6 @@ func main() {
 		fmt.Fprintln(os.Stderr, "parse error:", err.Error())
 		os.Exit(1)
 	}
-	t := strconv.FormatInt(time.Now().UnixNano(),10)
-	versions := models.CheckResponse {
-		models.TimestampVersion {
-			Version: t,
-		},
-	}
+	versions := ["init=1"]models.EmptyVersion{}
 	json.NewEncoder(os.Stdout).Encode(versions)
 }
