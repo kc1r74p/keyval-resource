@@ -36,6 +36,6 @@ type CheckRequest struct {
 	Version  EmptyVersion  `json:"version"`
 }
 
-type CheckResponse []TimestampVersion
+type CheckResponse []EmptyVersion 
 
 type Source struct {}
