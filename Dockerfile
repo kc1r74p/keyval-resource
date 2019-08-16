@@ -14,10 +14,4 @@ FROM alpine:edge AS resource
 RUN apk add --update bash tzdata
 COPY --from=builder /assets /opt/resource
 
-FROM resource AS tests
-COPY --from=builder /tests /tests
-RUN set -e; for test in /tests/*.test; do \
-		$test; \
-	done
-
 FROM resource
