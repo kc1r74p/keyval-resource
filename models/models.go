@@ -5,6 +5,10 @@ type EmptyVersion struct {
 
 type Version map[string]string
 
+type TimestampVersion struct {
+	Version string `json:"version"`
+}
+
 type InRequest struct {
 	Source  Source  `json:"source"`
 	Version Version `json:"version"`
@@ -33,6 +37,7 @@ type CheckRequest struct {
 }
 
 type CheckResponse []EmptyVersion
+type CheckResponse []TimestampVersion
 
 type Source struct {}
 
