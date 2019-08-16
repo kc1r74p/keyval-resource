@@ -15,6 +15,6 @@ func main() {
 		fmt.Fprintln(os.Stderr, "parse error:", err.Error())
 		os.Exit(1)
 	}
-	versions := ["init=1"]models.EmptyVersion{}
+	versions := []models.EmptyVersion{"init=1"}
 	json.NewEncoder(os.Stdout).Encode(versions)
 }
