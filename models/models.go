@@ -3,6 +3,10 @@ package models
 type EmptyVersion struct {
 }
 
+type TimestampVersion struct {
+	Version string `json:"version"`
+}
+
 type Version map[string]string
 
 type InRequest struct {
@@ -32,6 +36,6 @@ type CheckRequest struct {
 	Version  EmptyVersion  `json:"version"`
 }
 
-type CheckResponse []EmptyVersion
+type CheckResponse []TimestampVersion
 
 type Source struct {}
