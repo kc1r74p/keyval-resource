@@ -15,6 +15,7 @@ func main() {
 		fmt.Fprintln(os.Stderr, "parse error:", err.Error())
 		os.Exit(1)
 	}
-	versions := []models.InResponse{"init=1"}
+	versions := []models.InResponse{}
+	versions = append(versions, models.Version{Version: "Init=1"})
 	json.NewEncoder(os.Stdout).Encode(versions)
 }
