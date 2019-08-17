@@ -1,8 +1,8 @@
 
 [![Docker Stars](https://img.shields.io/docker/stars/gutzel/keyval-resource.svg?style=plastic)](https://registry.hub.docker.com/v2/repositories/gutzel/keyval-resource/stars/count/)
 [![Docker pulls](https://img.shields.io/docker/pulls/gutzel/keyval-resource.svg?style=plastic)](https://registry.hub.docker.com/v2/repositories/gutzel/keyval-resource)
-[![Docker build status](https://img.shields.io/docker/build/gutzel/keyval-resource.svg)](https://github.com/gutzel/keyval-resource)
-[![Docker Automated build](https://img.shields.io/docker/automated/swce/keyval-resource.svg)](https://github.com/swce/keyval-resource)
+[![Docker build status](https://img.shields.io/docker/build/gutzel/keyval-resource.svg)](https://github.com/kc1r74p/keyval-resource)
+[![Docker Automated build](https://img.shields.io/docker/automated/swce/keyval-resource.svg)](https://github.com/kc1r74p/keyval-resource)
 
 [![dockeri.co](http://dockeri.co/image/gutzel/keyval-resource)](https://hub.docker.com/r/gutzel/keyval-resource/)
 
