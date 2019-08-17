@@ -16,7 +16,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	var keys map[string]string
+	var keys = map[string]string{}
 	keys["Init"] = "1"
 	//keys = append(keys, {"Init=1"})
 	json.NewEncoder(os.Stdout).Encode(models.OutResponse{
