@@ -16,10 +16,13 @@ func main() {
 		os.Exit(1)
 	}
 
+	var inVersion = request.Version
 	versions := []models.Version{}
 	var keys = map[string]string{}
-	keys["Init"] = "1"	
-	versions = append(versions, keys)
+	if len(inVersion) < 1 {
+		keys["Init"] = "1"	
+		versions = append(versions, keys)
+	}
 
 
 	json.NewEncoder(os.Stdout).Encode(versions)
