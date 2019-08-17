@@ -16,6 +16,6 @@ func main() {
 		os.Exit(1)
 	}
 	versions := []models.InResponse{}
-	versions = append(versions, models.Version{Version: "Init=1"})
+	versions = append(versions, models.InResponse{Version: "Init=1"})
 	json.NewEncoder(os.Stdout).Encode(versions)
 }
