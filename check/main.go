@@ -19,7 +19,7 @@ func main() {
 	var keys = map[string]string{}
 	keys["Init"] = "1"
 	//keys = append(keys, {"Init=1"})
-	json.NewEncoder(os.Stdout).Encode(models.OutResponse{
+	json.NewEncoder(os.Stdout).Encode(models.InResponse{
 		Version:  keys,
 	})
 
