@@ -26,7 +26,7 @@ type OutResponse struct {
 
 type CheckRequest struct {
 	Source  Source  `json:"source"`
-	Version  InResponse  `json:"version"`
+	Version  Version  `json:"version"`
 }
 
 type CheckResponse []Version
