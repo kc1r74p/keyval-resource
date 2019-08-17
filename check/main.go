@@ -16,12 +16,20 @@ func main() {
 		os.Exit(1)
 	}
 
+	versions := []models.Version{}
 	var keys = map[string]string{}
-	keys["Init"] = "1"
+	keys["Init"] = "1"	
+	versions = append(versions, keys)
+
+
+	json.NewEncoder(os.Stdout).Encode(versions)
+
+	//var keys = map[string]string{}
+	//keys["Init"] = "1"
 	//keys = append(keys, {"Init=1"})
-	json.NewEncoder(os.Stdout).Encode(models.InResponse{
-		Version:  keys,
-	})
+	//json.NewEncoder(os.Stdout).Encode(models.Version{
+	//	Version:  keys,
+	//})
 
 	//versions := []models.OutResponse{}
 	//var keys []string
