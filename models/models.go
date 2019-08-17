@@ -29,7 +29,7 @@ type CheckRequest struct {
 	Version  InResponse  `json:"version"`
 }
 
-type CheckResponse []InResponse
+type CheckResponse []Version
 
 type Source struct {}
 
